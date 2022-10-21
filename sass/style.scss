@@ -1,0 +1,32 @@
+body{
+   
+width: 100%;
+margin: 0;
+background-color: aqua;}
+
+
+
+
+
+header {
+    
+    .logo{
+        width: 100%;
+        border-bottom: 2px solid grey;
+        background-color: white;
+        
+        
+    }
+    .imglogo{
+        display: block;
+        height: 50px;
+        width: 100%;
+    }
+}
+
+
+.city{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

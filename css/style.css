@@ -1,0 +1,28 @@
+body {
+  width: 100%;
+  margin: 0;
+  background-color: aqua;
+}
+
+header .logo {
+  width: 100%;
+  border-bottom: 2px solid grey;
+  background-color: white;
+}
+header .imglogo {
+  display: block;
+  height: 50px;
+  width: 100%;
+}
+
+.city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}/*# sourceMappingURL=style.css.map */
