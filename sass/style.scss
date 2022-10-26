@@ -92,22 +92,99 @@ header {
     @include miseenpage
 }
 
-.restau{
+
+.fonctionnement
+{height: 500px;
+
+    h1{padding-left: 5%;}
+}
+
+
+.filtre
+{
+    display: flex;
+    height: 70px;
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 10%;
+    background-color:rgb(239, 239, 239);
+    margin-left: 5%;
+    align-items: center;
+
+    
+    
+    
+    
+    
+    div{padding-left: 5%;}
+}
+
+
+.bouton
+{   display: flex;
+    background-color: #9356DC;
+align-items: center;
+width: 1%;
+height: 60%;
+padding-right: 7%;
+border-radius: 30px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.restau
+{
     background-color: rgb(239, 239, 239);
-    height: 500px;
+    height: 800px;
+
+    h1
+    {
+        padding: 10% 0 0 5%;
+    }
 }
 
 .card
-{background-color: white;
-    height: 200px;
-width: 80%;
-height: auto;
-margin: auto;
-
-border-radius: 20px;}
+{
+    background-color: white;
+    height: 320px;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 10%;
+}
 
 .banner
-{height: 90%;
+{height: 80%;
 width: 100%;
 position: relative;}
 
@@ -125,21 +202,31 @@ position: relative;}
 .nouveau
 {position: absolute;
 width: 25%;
-height: 20%;
+height: 25px;
 background-color: #99E2D0;
 top: 10%;
 right: 10%;
 text-align: center;
 border-radius: 5px;
+align-items: center;
+    
+    h3 
+    {
+        margin-top: 0;
+        color: green;
+    }
 
 
 }
 
+
+
 .description
 {display: flex;
-    height: 10%;
-justify-content: space-between
-;}
+height: 20%;
+justify-content: space-between;
+line-height: 30%;
+padding-left: 5%;}
 
 
 .text
