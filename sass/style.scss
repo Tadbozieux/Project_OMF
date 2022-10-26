@@ -1,6 +1,10 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiers-color: #99E2D0;
+$backgroundgrey:rgb(240, 240, 240);
+
+.relativ
+{position:relative}
 
 
 *{box-sizing: border-box;}
@@ -19,12 +23,10 @@ align-items: center;
 justify-content: center;
 padding: 10px 20px 10px 20px;
 text-align: center;
-
 }
 
-
-header {
-    
+@mixin header
+{
     .logo{
         width: 100%;
         border-bottom: 2px solid grey;
@@ -34,35 +36,94 @@ header {
 
     img{
         display: block;
-        height: 60px;
+        height: 50px;
         width: 50%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 10px;
         margin-top: 10px;
     }
+}
 
-    .city{
+@mixin headerfleche
+{
+    display: flex;
+
+    .fleche{
         display: flex;
+        width: 20%;
         align-items: center;
         justify-content: center;
-        background-color: #8d8a8a;
-        height: 60px;}
-       
-    .gps
-       {
-        border: none;
-        background-color: #8d8a8a;
-        margin-left: 12px;
-        height: 40px;
-        font-size: large;
-        color: black;
+        border-bottom: 2px solid grey;
+    }
+
+    .logo{
+        width: 80%;
+        border-bottom: 2px solid grey;
+        background-color:white;
         
-       }
-    
+        }
+
+    img{
+        display: block;
+        height: 50px;
+        width: 80%;
+        margin-left: 0;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
 }
 
 
+
+
+
+@mixin footer
+{
+    background-color: #595858;
+    color: white;
+    padding: 5% 0% 10% 5%;
+
+
+    .imglogofooter
+    {
+    width: 30%;
+    filter: invert(100%);
+    
+    }
+}
+
+
+header {
+    
+    @include header
+
+}
+
+
+.headerfleche{
+    @include headerfleche
+}
+
+
+.city{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8d8a8a;
+    height: 60px;}
+   
+.gps
+   {
+    border: none;
+    background-color: #8d8a8a;
+    margin-left: 12px;
+    height: 40px;
+    font-size: large;
+    color: black;
+    
+   }
 
 .Titres
     {
@@ -94,7 +155,8 @@ header {
 
 
 .fonctionnement
-{height: 500px;
+{height: 400px;
+margin: 5%;
 
     h1{padding-left: 5%;}
 }
@@ -108,29 +170,51 @@ header {
     border-radius: 20px;
     margin-top: 10%;
     background-color:rgb(239, 239, 239);
-    margin-left: 5%;
     align-items: center;
+    position: relative;
+    margin-left: 5%;
+    box-shadow: 5px 5px 20px #595858 ;
+    }
 
-    
-    
-    
-    
-    
-    div{padding-left: 5%;}
+
+.filtre:active{
+    background-color:$secondary-color;
+    scale:1.05; 
+    transition: 2s;
 }
 
 
 .bouton
 {   display: flex;
     background-color: #9356DC;
+    align-items: center;
+    height: 40%;
+    justify-content: center;
+    position: absolute;
+    left:-2%;
+    width: 10%;
+    padding: 0px;
+    border-radius: 30px;
+
+}
+
+.iconechoix
+{display: flex;
+    padding-left: 15%;
+    justify-content: space-between;
+    width: 75%;
+   
+}
+
+
+
+
+.icone
+{justify-content: center;
 align-items: center;
-width: 1%;
-height: 60%;
-padding-right: 7%;
-border-radius: 30px;}
+width: 10%;
 
-
-
+}
 
 
 
@@ -164,14 +248,28 @@ border-radius: 30px;}
 
 .restau
 {
-    background-color: rgb(239, 239, 239);
-    height: 800px;
+    background-color: rgb(240, 240, 240);
+    height: auto;
+    padding-bottom: 5%;
 
     h1
     {
         padding: 10% 0 0 5%;
     }
+
+    a{color: black;
+    text-decoration: none;}
 }
+
+
+.entete
+{display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div{width: 40%;}
+}
+
 
 .card
 {
@@ -237,3 +335,172 @@ padding-left: 5%;}
 padding-left: 2%;
 width: 20%;
 height: 100%;}
+
+
+
+.icon2:active
+{color: #9356DC;
+    background-color: #9356DC;
+transition: 1.5s;}
+
+
+// ------------------------------Page 2--------------------
+
+
+
+
+
+
+
+.imgrestau
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  
+    
+    
+
+   
+    
+}
+
+.Menu
+{
+    height: auto;
+    background-color: $backgroundgrey;
+    border-radius: 20px 20px 0 0;
+}
+
+
+.plat
+{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    margin:5%;
+    box-shadow: 5px 5px 10px #595858 ;
+    justify-content: space-between;
+    height: 80px;
+    line-height: 10%;
+}
+
+.descriptionplat
+{
+    width: 60%;
+}
+
+.prix{
+    
+    display: flex;
+    align-items: flex-end;
+    width: 25%;
+}
+
+.valid
+{   display: flex;
+    width: 20%;
+    justify-content: center;
+    margin: auto;
+    display: none;
+}
+
+
+
+
+.descriptionplat:active
+{
+    background:red;
+    .valid{display: flex;}
+} 
+
+.plat:hover
+{
+    @include test2
+} 
+
+
+
+@mixin test2{
+
+    .valid{display:flex}
+}
+
+
+
+
+
+
+// ------------------------------Page 2--------------------
+
+footer
+{
+    @include footer
+}
+
+
+
+
+
+@keyframes ldio-19p9u4j5dzi {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+  }
+  .ldio-19p9u4j5dzi > div > div {
+    transform-origin: 50px 50px;
+    animation: ldio-19p9u4j5dzi 14.285714285714286s linear infinite;
+    opacity: 0.62
+  }
+  .ldio-19p9u4j5dzi > div > div > div {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px 0 0 0;
+    transform-origin: 50px 50px
+  }.ldio-19p9u4j5dzi > div div:nth-child(1) {
+    animation-duration: 3.5714285714285716s
+  }
+  .ldio-19p9u4j5dzi > div div:nth-child(1) > div {
+    background: #9356dc;
+    transform: rotate(0deg);
+  }.ldio-19p9u4j5dzi > div div:nth-child(2) {
+    animation-duration: 4.761904761904763s
+  }
+  .ldio-19p9u4j5dzi > div div:nth-child(2) > div {
+    background: #ff79da;
+    transform: rotate(0deg);
+  }.ldio-19p9u4j5dzi > div div:nth-child(3) {
+    animation-duration: 7.142857142857143s
+  }
+  .ldio-19p9u4j5dzi > div div:nth-child(3) > div {
+    background: #99e2d0;
+    transform: rotate(0deg);
+  }.ldio-19p9u4j5dzi > div div:nth-child(4) {
+    animation-duration: 14.285714285714286s
+  }
+  .ldio-19p9u4j5dzi > div div:nth-child(4) > div {
+    background: #9356dc;
+    transform: rotate(0deg);
+  }
+  .loadingio-spinner-wedges-2prl2z70gyv {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    overflow: hidden;
+    background: $backgroundgrey;
+    padding-left: 20%;
+  }
+  .ldio-19p9u4j5dzi {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(0.44);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+  }
+  .ldio-19p9u4j5dzi div { box-sizing: content-box; }
+  /* generated by https://loading.io/ */
+
+
