@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"><!--integration FontAwesome-->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style.scss" />
+    <link rel="stylesheet" href="css/queries.scss" />
+    <link rel="stylesheet" href="css/queries.css" />
     <title>OMF</title>
   </head>
 
@@ -26,38 +28,38 @@
       <div class="Titres">
         <div><h1>Réservez le menu qui <br> vous convient</h1></div>
         <div><h3>Découvrez des restaurants d'exeption, selectionnés par nos soins.</h3></div>
-        <p>Explorer nos restaurants</p>
+        <div class="rose"><p>Explorer nos restaurants</p></div>
       </div>
     </section>
 
     <section class="fonctionnement">
 
-      <h1>Fonctionnement</h1>
+      <div><h1>Fonctionnement</h1></div>
+      <div class="filtregeneral">
+        <div class="filtre">
+          <div class="bouton">1</div>
+          <div class="iconechoix">
+            <div class="icone"><i class="fas fa-mobile-alt "></i></div>
+            <div class="filtredescription">Choisissez un restaurant</div>
+          </div>
+        </div>
 
-      <div class="filtre">
-        <div class="bouton">1</div>
-        <div class="iconechoix">
-          <div class="icone"><i class="fas fa-mobile-alt "></i></div>
-          <div>Choisissez un restaurant</div>
+        <div class="filtre">
+          <div class="bouton">2</div>
+          <div class="iconechoix">
+            <div class="icone"><i class="fas fa-list-ul"></i></div>
+            <div class="filtredescription">Choisissez un restaurant</div>
+          </div>
+        </div>
+
+        <div class="filtre">
+          <div class="bouton">3</div>
+          <div class="iconechoix">
+            <div class="icone"><i class="fas fa-store"></i></div>
+            <div class="filtredescription">Choisissez un restaurant</div>
+          </div>
         </div>
       </div>
-
-      <div class="filtre">
-        <div class="bouton">1</div>
-        <div class="iconechoix">
-          <div class="icone"><i class="fas fa-list-ul"></i></div>
-          <div>Choisissez un restaurant</div>
-        </div>
-      </div>
-
-      <div class="filtre">
-        <div class="bouton">1</div>
-        <div class="iconechoix">
-          <div class="icone"><i class="fas fa-store"></i></div>
-          <div>Choisissez un restaurant</div>
-        </div>
-      </div>
-
 
 
 
@@ -149,8 +151,8 @@
 
     <footer>
       <div ><img src="img/logo/ohmyfood.png" alt="logo" class="imglogofooter"> </div>
-      <div></div><p>Proposer un restaurant</p>
-      <div></div><p>Devenir partenaire</p>
+      <div class="footerligne"><i class="fas fa-utensils"></i><p>Proposer un restaurant</p></div>
+      <div class="footerligne"><i class="fas fa-hands-helping"></i><p>Devenir partenaire</p></div>
       <div></div><p>Mentions légales</p>
       <div>contact</div>
 

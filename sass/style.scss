@@ -3,8 +3,7 @@ $secondary-color: #FF79DA;
 $tertiers-color: #99E2D0;
 $backgroundgrey:rgb(240, 240, 240);
 
-.relativ
-{position:relative}
+
 
 
 *{box-sizing: border-box;}
@@ -55,6 +54,9 @@ text-align: center;
         align-items: center;
         justify-content: center;
         border-bottom: 2px solid grey;
+        
+        color: black;
+        
     }
 
     .logo{
@@ -75,6 +77,16 @@ text-align: center;
     }
 }
 
+@mixin btnrose
+{   border: 1px solid red;
+    text-align: center;
+    border-radius: 30px;
+    background-image: linear-gradient(150deg, $secondary-color, $primary-color );
+    margin:auto;
+    height: 55px;
+    
+}
+
 
 
 
@@ -84,12 +96,14 @@ text-align: center;
     background-color: #595858;
     color: white;
     padding: 5% 0% 10% 5%;
+    line-height: 80%;
 
 
     .imglogofooter
     {
     width: 30%;
     filter: invert(100%);
+    margin-bottom: 2%;
     
     }
 }
@@ -111,13 +125,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #8d8a8a;
+    background-color: #a7a5a5;
     height: 60px;}
    
 .gps
    {
     border: none;
-    background-color: #8d8a8a;
+    background-color: #a7a5a5;
     margin-left: 12px;
     height: 40px;
     font-size: large;
@@ -141,11 +155,9 @@ header {
         font-weight: lighter;
     }
 
-    p{
-        border: 1px solid red;
-        padding: 5%;
-        border-radius: 30px;
-        background-image: linear-gradient(150deg, $secondary-color, $primary-color );
+    .rose{
+        @include btnrose;
+        width:50%;
         
         
     }
@@ -202,7 +214,7 @@ margin: 5%;
 {display: flex;
     padding-left: 15%;
     justify-content: space-between;
-    width: 75%;
+    width: 90%;
    
 }
 
@@ -213,11 +225,15 @@ margin: 5%;
 {justify-content: center;
 align-items: center;
 width: 10%;
+margin: auto;
 
 }
 
 
-
+.filtredescription
+{
+    padding-left: 10%;
+}
 
 
 
@@ -347,7 +363,17 @@ transition: 1.5s;}
 // ------------------------------Page 2--------------------
 
 
+.menugeneral
+{
+    width: 100%;
+    
 
+    hr
+    {width: 20%;
+    margin-left: 1%;
+color: $tertiers-color;
+    }
+}
 
 
 
@@ -367,22 +393,42 @@ transition: 1.5s;}
 
 .Menu
 {
-    height: auto;
+    height: 1200px;
     background-color: $backgroundgrey;
     border-radius: 20px 20px 0 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 50%;
+
+
+
+   
+    
 }
 
+.menutitle
+{
+    display: flex;
+    justify-content: space-between;
 
+    .hearticon{
+        width: 20%;
+        margin: auto;
+        padding-left: 20%;
+}
+}
 .plat
 {
     display: flex;
     background-color: white;
     border-radius: 20px;
-    margin:5%;
+    
     box-shadow: 5px 5px 10px #595858 ;
     justify-content: space-between;
     height: 80px;
     line-height: 10%;
+    padding-left: 5%;
+    margin-bottom: 5%;
 }
 
 .descriptionplat
@@ -394,6 +440,7 @@ transition: 1.5s;}
     
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     width: 25%;
 }
 
@@ -414,30 +461,38 @@ transition: 1.5s;}
     .valid{display: flex;}
 } 
 
-.plat:hover
-{
-    @include test2
-} 
 
 
 
-@mixin test2{
 
-    .valid{display:flex}
+.commander
+{   
+    width: 50%;
+    height: 55px;
+    text-align: center;
+    line-height: 100%;
+    margin-top: 10%;
+   @include btnrose;
+   margin-top: 15%;
 }
-
-
-
-
-
 
 // ------------------------------Page 2--------------------
 
 footer
 {
     @include footer
+    
+    
 }
 
+.footerligne
+{display: flex;
+align-items: center;
+height: 30px;
+
+    p{padding-left: 10px ;}
+
+}
 
 
 

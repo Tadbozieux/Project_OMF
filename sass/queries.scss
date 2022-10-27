@@ -1,0 +1,95 @@
+@media screen and (min-width: 700px)
+
+{
+header
+{
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+    animation: color 9s infinite linear;
+    margin: 0;
+    
+
+    .logo
+{
+    border-bottom: none;
+    margin-bottom: 0;
+    animation: color 9s infinite linear;
+}
+
+    img{
+        margin-bottom:0;
+        margin-top: 0;
+    }
+}
+
+.rose
+{
+    max-width: 260px;
+}
+
+.filtregeneral
+{display: flex;}
+
+    
+
+
+
+
+.fonctionnement
+{
+    height: auto;
+
+
+    h1
+    {
+        width: 100%;
+    }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes color 
+{
+    0%   { background: #9356DC; }
+    20%  { background: #FF79DA; }
+    40%  { background: #99E2D0; }
+    60%  { background: #FF79DA; }
+    80%  { background: #9356DC; }
+    100% { background: #99E2D0; }
+}
