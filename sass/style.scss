@@ -347,8 +347,9 @@ padding-left: 5%;}
 {width: 80%;}
 
 .icon
-{padding-top: 7%;
-padding-left: 2%;
+{display: flex;
+align-items: center;
+justify-content: center;
 width: 20%;
 height: 100%;}
 

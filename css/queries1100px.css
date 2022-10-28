@@ -1,0 +1,36 @@
+@media screen and (min-width: 1100px) {
+  .fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2%;
+  }
+  .fonctionnement h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: red;
+    margin-top: 10%;
+    margin-right: 50px;
+  }
+  .filtre {
+    margin: auto;
+    max-width: 250px;
+  }
+  .filtregeneral {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 75%;
+  }
+  .restau {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .entete {
+    width: 100%;
+  }
+}/*# sourceMappingURL=queries1100px.css.map */
