@@ -1,63 +1,13 @@
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiers-color: #99E2D0;
-$backgroundgrey:rgb(240, 240, 240);
 
 
 
 
 *{box-sizing: border-box;}
 
-body{
-   
-width: 100%;
-margin: 0%;
-}
 
 
-@mixin miseenpage
-{display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 10px 20px 10px 20px;
-text-align: center;
-}
 
-@mixin header
-{
-    .logo{
-        width: 100%;
-        border-bottom: 2px solid grey;
-        background-color: white;
-        
-        }
 
-    img{
-        display: block;
-        height: 50px;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-}
-
-@mixin headerfleche
-{
-    display: flex;
-
-    .fleche{
-        display: flex;
-        width: 20%;
-        align-items: center;
-        justify-content: center;
-        border-bottom: 2px solid grey;
-        
-        color: black;
-        
-    }
 
     .logo{
         width: 80%;
@@ -75,69 +25,23 @@ text-align: center;
         margin-bottom: 10px;
         margin-top: 10px;
     }
-}
-
-@mixin btnrose
-{   border: 1px solid red;
-    text-align: center;
-    border-radius: 30px;
-    background-image: linear-gradient(150deg, $secondary-color, $primary-color );
-    margin:auto;
-    height: 55px;
-    
-}
 
 
 
 
 
-@mixin footer
-{
-    background-color: #595858;
-    color: white;
-    padding: 5% 0% 10% 5%;
-    line-height: 80%;
 
 
-    .imglogofooter
-    {
-    width: 30%;
-    filter: invert(100%);
-    margin-bottom: 2%;
-    
-    }
-}
 
 
-header {
-    
-    @include header
-
-}
 
 
-.headerfleche{
-    @include headerfleche
-}
 
 
-.city{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #a7a5a5;
-    height: 60px;}
-   
-.gps
-   {
-    border: none;
-    background-color: #a7a5a5;
-    margin-left: 12px;
-    height: 40px;
-    font-size: large;
-    color: black;
-    
-   }
+
+
+
+
 
 .Titres
     {

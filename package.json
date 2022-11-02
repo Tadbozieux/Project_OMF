@@ -1,0 +1,19 @@
+{
+  "name": "project_omf",
+  "version": "1.0.0",
+  "description": "appli ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tadbozieux/Project_OMF.git"
+  },
+  "author": "Tad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tadbozieux/Project_OMF/issues"
+  },
+  "homepage": "https://github.com/Tadbozieux/Project_OMF#readme"
+}
