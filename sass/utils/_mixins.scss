@@ -44,14 +44,26 @@ text-align: center;
 }
 
 @mixin btnrose
-{   border: 1px solid red;
-    text-align: center;
+{   display: flex;
+    text-align:center;
+    align-items: center;
+    color: white;
     border-radius: 30px;
-    background-image: linear-gradient(150deg, $secondary-color, $primary-color );
-    margin:auto;
+    background-image: linear-gradient(200deg, $primary-color 0%, $secondary-color 100%);
     height: 55px;
-    
+    padding: 5%;
+    width: 200px;
+    white-space: nowrap;
+    margin: 4rem auto;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
 }
+
+
+
+
 
 
 

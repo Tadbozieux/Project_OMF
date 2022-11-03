@@ -145,12 +145,20 @@ header img {
   text-align: center;
   line-height: 100%;
   margin-top: 10%;
-  border: 1px solid red;
+  display: flex;
   text-align: center;
+  align-items: center;
+  color: white;
   border-radius: 30px;
-  background-image: linear-gradient(150deg, #FF79DA, #9356DC);
-  margin: auto;
+  background-image: linear-gradient(200deg, #9356DC 0%, #FF79DA 100%);
   height: 55px;
+  padding: 5%;
+  width: 200px;
+  white-space: nowrap;
+  margin: 4rem auto;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
   margin-top: 15%;
 }
 
@@ -279,13 +287,20 @@ footer .imglogofooter {
   font-weight: lighter;
 }
 .Titres .rose {
-  border: 1px solid red;
+  display: flex;
   text-align: center;
+  align-items: center;
+  color: white;
   border-radius: 30px;
-  background-image: linear-gradient(150deg, #FF79DA, #9356DC);
-  margin: auto;
+  background-image: linear-gradient(200deg, #9356DC 0%, #FF79DA 100%);
   height: 55px;
-  width: 50%;
+  padding: 5%;
+  width: 200px;
+  white-space: nowrap;
+  margin: 4rem auto;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 /*-----------------------------*/
@@ -382,6 +397,12 @@ footer .imglogofooter {
   margin-left: 5%;
   box-shadow: 5px 5px 20px #595858;
 }
+.filtre :hover {
+  background: #FF79DA;
+}
+.filtre :hover .icone {
+  color: #9356DC;
+}
 
 .filtre:active {
   background-color: #FF79DA;
@@ -392,28 +413,31 @@ footer .imglogofooter {
 .bouton {
   display: flex;
   background-color: #9356DC;
+  color: white;
   align-items: center;
   height: 40%;
   justify-content: center;
   position: absolute;
-  left: -2%;
-  width: 10%;
+  left: -5%;
+  width: 28px;
   padding: 0px;
-  border-radius: 30px;
+  border-radius: 50%;
 }
 
 .iconechoix {
+  align-items: center;
   display: flex;
-  padding-left: 15%;
-  justify-content: space-between;
-  width: 90%;
+  padding-left: 2%;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
 .icone {
   justify-content: center;
   align-items: center;
   width: 10%;
-  margin: auto;
+  padding-left: 5%;
 }
 
 .filtredescription {
