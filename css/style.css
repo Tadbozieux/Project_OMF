@@ -542,6 +542,101 @@ footer .imglogofooter {
   line-height: 1;
 }
 
+.menugeneral {
+  width: 100%;
+}
+.menugeneral hr {
+  width: 20%;
+  margin-left: 1%;
+  color: #99E2D0;
+}
+
+.imgrestau {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.Menu {
+  height: 1200px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 20px 20px 0 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 50%;
+}
+
+.menutitle {
+  display: flex;
+  justify-content: space-between;
+}
+.menutitle .hearticon {
+  width: 20%;
+  margin: auto;
+  padding-left: 20%;
+}
+
+.plat {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #595858;
+  justify-content: space-between;
+  height: 80px;
+  line-height: 10%;
+  padding-left: 5%;
+  margin-bottom: 5%;
+}
+
+.descriptionplat {
+  width: 60%;
+}
+
+.prix {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 25%;
+}
+
+.valid {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  margin: auto;
+  display: none;
+}
+
+.descriptionplat:active {
+  background: red;
+}
+.descriptionplat:active .valid {
+  display: flex;
+}
+
+.commander {
+  width: 50%;
+  height: 55px;
+  text-align: center;
+  line-height: 100%;
+  margin-top: 10%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: white;
+  border-radius: 30px;
+  background-image: linear-gradient(200deg, #9356DC 0%, #FF79DA 100%);
+  height: 55px;
+  padding: 5%;
+  width: 200px;
+  white-space: nowrap;
+  margin: 4rem auto;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 15%;
+}
+
 @media screen and (min-width: 700px) {
   header {
     width: 100%;

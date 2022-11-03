@@ -1,0 +1,112 @@
+.menugeneral
+{
+    width: 100%;
+    
+
+    hr
+    {width: 20%;
+    margin-left: 1%;
+color: $tertiers-color;
+    }
+}
+
+
+
+
+.imgrestau
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  
+    
+    
+
+   
+    
+}
+
+.Menu
+{
+    height: 1200px;
+    background-color: $backgroundgrey;
+    border-radius: 20px 20px 0 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 50%;
+
+
+
+   
+    
+}
+
+.menutitle
+{
+    display: flex;
+    justify-content: space-between;
+
+    .hearticon{
+        width: 20%;
+        margin: auto;
+        padding-left: 20%;
+}
+}
+.plat
+{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    
+    box-shadow: 5px 5px 10px #595858 ;
+    justify-content: space-between;
+    height: 80px;
+    line-height: 10%;
+    padding-left: 5%;
+    margin-bottom: 5%;
+}
+
+.descriptionplat
+{
+    width: 60%;
+}
+
+.prix{
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 25%;
+}
+
+.valid
+{   display: flex;
+    width: 20%;
+    justify-content: center;
+    margin: auto;
+    display: none;
+}
+
+
+
+
+.descriptionplat:active
+{
+    background:red;
+    .valid{display: flex;}
+} 
+
+
+
+
+
+.commander
+{   
+    width: 50%;
+    height: 55px;
+    text-align: center;
+    line-height: 100%;
+    margin-top: 10%;
+   @include btnrose;
+   margin-top: 15%;
+}
