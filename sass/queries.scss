@@ -29,7 +29,12 @@ header
 }
 
 .filtregeneral
-{display: flex;}
+{display: flex;
+
+    .filtre{
+        margin-top: 0;
+    }
+}
 
     
 
@@ -45,6 +50,9 @@ header
     {
         width: 100%;
     }
+
+    .iconechoix
+    {padding-left: 10%;}
 }
 
 
@@ -56,26 +64,7 @@ header
 
 
 
-footer{
-    display: flex;
-    flex-wrap: wrap;
-    height: 250px;
 
-    div{
-        width: 25%;
-        height: 140px;
-    }
-
-    .divlogofooter
-    {width: 100%;}
-    
-    .imglogofooter {
-        display: flex;
-        margin: auto;
-        height: 80px;
-        width: 50%;
-    }
-}
 
 
 

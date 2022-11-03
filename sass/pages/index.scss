@@ -15,7 +15,14 @@
     }
 
     .rose{
+        
         @include btnrose;
+    }
+
+    .rose:hover{
+        filter:brightness(1.15);
+        box-shadow: grey 8px 8px 20px;
+        
     }
     
     @include miseenpage
@@ -116,8 +123,8 @@ margin: 5%;
     position: relative;
     margin-left: 5%;
     box-shadow: 5px 5px 20px #595858 ;
-    
-    :hover{background: $secondary-color;
+    font-weight: bold;
+    :hover{background: #F9E7F7;
 
     .icone{color: $primary-color;}
     }
@@ -162,9 +169,10 @@ margin: 5%;
 
 
 .icone
-{justify-content: center;
+{display: flex;
+    justify-content: center;
 align-items: center;
-width: 10%;
+width: 20%;
 padding-left: 5%;
 
 }
@@ -183,7 +191,7 @@ padding-left: 5%;
 {
     background-color: rgb(240, 240, 240);
     height: auto;
-    padding-bottom: 5%;
+    padding: 2%;
 
     h1
     {
@@ -192,15 +200,20 @@ padding-left: 5%;
 
     a{color: black;
     text-decoration: none;}
+
+    
 }
 
 
 .entete
-{display: flex;
+{   width: 90%;
+    
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    padding:0;
 
-    div{width: 40%;}
+    h1{padding: 0%;}
 }
 
 
@@ -208,11 +221,17 @@ padding-left: 5%;
 {
     background-color: white;
     height: 320px;
-    width: 90%;
+    width: 100%;
     margin: auto;
     border-radius: 20px;
     margin-bottom: 10%;
+
+    &:hover{filter:brightness(1.15);
+        box-shadow: grey 8px 8px 20px;}
 }
+
+
+
 
 .banner
 {height: 80%;

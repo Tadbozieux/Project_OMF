@@ -53,8 +53,8 @@ header .logo {
 }
 header img {
   display: block;
-  height: 50px;
-  width: 50%;
+  height: 40px;
+  width: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -70,6 +70,10 @@ header img {
   align-items: center;
   justify-content: center;
   border-bottom: 2px solid grey;
+  text-decoration: none;
+  color: black;
+}
+.headerfleche .fleche .fa-arrow-left {
   color: black;
 }
 
@@ -150,15 +154,13 @@ header img {
   align-items: center;
   color: white;
   border-radius: 30px;
-  background-image: linear-gradient(200deg, #9356DC 0%, #FF79DA 100%);
-  height: 55px;
-  padding: 5%;
-  width: 200px;
+  background: linear-gradient(200deg, #9356DC 0%, #FF79DA 100%);
+  padding: 18px;
+  width: auto;
   white-space: nowrap;
   margin: 4rem auto;
   border-radius: 30px;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
   margin-top: 15%;
 }
 
@@ -166,13 +168,18 @@ header img {
 footer {
   background-color: #595858;
   color: white;
-  padding: 5% 0% 10% 5%;
+  padding: 5% 0% 5% 5%;
   line-height: 80%;
+  height: auto;
 }
 footer .imglogofooter {
-  width: 30%;
+  width: 150px;
   filter: invert(100%);
   margin-bottom: 2%;
+}
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
 .footerligne {
@@ -292,15 +299,17 @@ footer .imglogofooter {
   align-items: center;
   color: white;
   border-radius: 30px;
-  background-image: linear-gradient(200deg, #9356DC 0%, #FF79DA 100%);
-  height: 55px;
-  padding: 5%;
-  width: 200px;
+  background: linear-gradient(200deg, #9356DC 0%, #FF79DA 100%);
+  padding: 18px;
+  width: auto;
   white-space: nowrap;
   margin: 4rem auto;
   border-radius: 30px;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+}
+.Titres .rose:hover {
+  filter: brightness(1.15);
+  box-shadow: grey 8px 8px 20px;
 }
 
 /*-----------------------------*/
@@ -396,9 +405,10 @@ footer .imglogofooter {
   position: relative;
   margin-left: 5%;
   box-shadow: 5px 5px 20px #595858;
+  font-weight: bold;
 }
 .filtre :hover {
-  background: #FF79DA;
+  background: #F9E7F7;
 }
 .filtre :hover .icone {
   color: #9356DC;
@@ -434,9 +444,10 @@ footer .imglogofooter {
 }
 
 .icone {
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 10%;
+  width: 20%;
   padding-left: 5%;
 }
 
@@ -448,7 +459,7 @@ footer .imglogofooter {
 .restau {
   background-color: rgb(240, 240, 240);
   height: auto;
-  padding-bottom: 5%;
+  padding: 2%;
 }
 .restau h1 {
   padding: 10% 0 0 5%;
@@ -459,21 +470,27 @@ footer .imglogofooter {
 }
 
 .entete {
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0;
 }
-.entete div {
-  width: 40%;
+.entete h1 {
+  padding: 0%;
 }
 
 .card {
   background-color: white;
   height: 320px;
-  width: 90%;
+  width: 100%;
   margin: auto;
   border-radius: 20px;
   margin-bottom: 10%;
+}
+.card:hover {
+  filter: brightness(1.15);
+  box-shadow: grey 8px 8px 20px;
 }
 
 .banner {
@@ -625,15 +642,13 @@ footer .imglogofooter {
   align-items: center;
   color: white;
   border-radius: 30px;
-  background-image: linear-gradient(200deg, #9356DC 0%, #FF79DA 100%);
-  height: 55px;
-  padding: 5%;
-  width: 200px;
+  background: linear-gradient(200deg, #9356DC 0%, #FF79DA 100%);
+  padding: 18px;
+  width: auto;
   white-space: nowrap;
   margin: 4rem auto;
   border-radius: 30px;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
   margin-top: 15%;
 }
 
@@ -660,32 +675,20 @@ footer .imglogofooter {
   .filtregeneral {
     display: flex;
   }
+  .filtregeneral .filtre {
+    margin-top: 0;
+  }
   .fonctionnement {
     height: auto;
   }
   .fonctionnement h1 {
     width: 100%;
   }
+  .fonctionnement .iconechoix {
+    padding-left: 10%;
+  }
   .nouveau {
     max-width: 100px;
-  }
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    height: 250px;
-  }
-  footer div {
-    width: 25%;
-    height: 140px;
-  }
-  footer .divlogofooter {
-    width: 100%;
-  }
-  footer .imglogofooter {
-    display: flex;
-    margin: auto;
-    height: 80px;
-    width: 50%;
   }
 }
 @keyframes color {
@@ -709,23 +712,21 @@ footer .imglogofooter {
   }
 }
 @media screen and (min-width: 1100px) {
-  .fonctionnement {
+  brig .fonctionnement {
     display: flex;
     margin: 2%;
   }
-  .fonctionnement h1 {
+  brig .fonctionnement h1 {
     display: flex;
-    color: red;
     margin-top: 10%;
     margin-right: 50px;
   }
   .filtre {
-    margin: auto;
-    max-width: 250px;
+    max-width: 350px;
   }
   .filtregeneral {
     justify-content: space-between;
-    width: 75%;
+    width: 90%;
   }
   .restau {
     display: flex;
@@ -733,6 +734,10 @@ footer .imglogofooter {
   }
   .entete {
     width: 100%;
+  }
+  a {
+    width: 48%;
+    margin-right: 2%;
   }
 }
 
