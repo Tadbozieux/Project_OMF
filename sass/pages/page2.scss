@@ -3,6 +3,7 @@
     width: 100%;
     position: relative;
     margin-top: -10%;
+
     
 
     hr
@@ -88,17 +89,3 @@ color: $tertiers-color;
     .valid{display: flex;}
 } 
 
-
-
-
-
-.commander
-{   
-    width: 50%;
-    height: 55px;
-    text-align: center;
-    line-height: 100%;
-    margin-top: 10%;
-   @include btnrose;
-   margin-top: 15%;
-}

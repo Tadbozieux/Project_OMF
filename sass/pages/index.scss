@@ -14,19 +14,12 @@
         font-weight: lighter;
     }
 
-    .rose{
-        
-        @include btnrose;
-    }
 
-    .rose:hover{
-        filter:brightness(1.15);
-        box-shadow: grey 8px 8px 20px;
-        
-    }
     
     @include miseenpage
 }
+
+
 /*-----------------------------*/
 
 .Load{
@@ -226,8 +219,10 @@ padding-left: 5%;
     border-radius: 20px;
     margin-bottom: 10%;
 
-    &:hover{filter:brightness(1.15);
-        box-shadow: grey 8px 8px 20px;}
+    &:hover
+    {
+        @include brightness
+    }
 }
 
 

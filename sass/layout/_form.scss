@@ -3,9 +3,6 @@
 
 
 
-
-
-
 .imgrestau
 {
     width: 100%;
@@ -13,25 +10,18 @@
     object-fit: cover;
   
     
-    
-
-   
-    
 }
 
 .Menu
 {
-    height: 1200px;
+    
     background-color: $backgroundgrey;
     border-radius: 40px 40px 0 0;
     padding-left: 5%;
     padding-right: 5%;
     line-height: 50%;
+    padding-bottom: 8%;
 
-
-
-   
-    
 }
 
 .menutitle
@@ -86,16 +76,6 @@
 
 
 
-.commander
-{   
-    width: 50%;
-    height: 55px;
-    text-align: center;
-    line-height: 100%;
-    margin-top: 10%;
-   @include btnrose;
-   margin-top: 15%;
-}
 
 
 /* Menu*/

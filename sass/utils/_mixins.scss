@@ -10,26 +10,36 @@ text-align: center;
 @mixin header
 {
     .logo{
+        display: flex;
         width: 100%;
-        border-bottom: 2px solid grey;
         background-color: white;
+        margin: auto;
         
         }
 
     img{
-        display: block;
+        display: flex;
         height: 40px;
         width: 200px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 @mixin headerfleche
 {
     display: flex;
+
+    header{height: 50px;}
+
+    .logo{
+        margin-left: 5%;
+        margin-right: 15%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
 
     .fleche{
         display: flex;
@@ -51,18 +61,17 @@ text-align: center;
 {   display: flex;
     text-align:center;
     align-items: center;
+    justify-content: center;
     color: white;
-    border-radius: 30px;
+    border-radius: 0px;
     background: linear-gradient(200deg, $primary-color 0%, $secondary-color 100%);
-    
     padding: 18px;
     width: auto;
-    white-space: nowrap;
-    margin: 4rem auto;
+    max-width: 200px;
+    margin: auto;
     border-radius: 30px;
     cursor: pointer;
-  
-    
+
 }
 
 
@@ -79,6 +88,7 @@ text-align: center;
     padding: 5% 0% 5% 5%;
     line-height: 80%;
     height: auto;
+    
 
 
     .imglogofooter
@@ -92,4 +102,11 @@ text-align: center;
         text-decoration: none;
         color: white;
     }
+}
+
+
+@mixin brightness
+{
+    filter:brightness(1.15);
+    box-shadow: grey 8px 8px 20px;
 }
