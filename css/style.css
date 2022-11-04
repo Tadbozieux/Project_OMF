@@ -1,25 +1,32 @@
-.vignets {
-  animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari et Chrome */
-  -o-animation: fadein 2s; /* Opera */
+.vignets1 {
+  animation: fondu 2s;
+  -moz-animation: fondu 2s; /* Firefox */
+  -webkit-animation: fondu 2s; /* Safari et Chrome */
+  -o-animation: fondu 2s; /* Opera */
 }
 
 .vignets2 {
-  animation: fadein 6s;
-  -moz-animation: fadein 6s; /* Firefox */
-  -webkit-animation: fadein 6s; /* Safari et Chrome */
-  -o-animation: fadein 6s; /* Opera */
+  animation: fondu 6s;
+  -moz-animation: fondu 6s; /* Firefox */
+  -webkit-animation: fondu 6s; /* Safari et Chrome */
+  -o-animation: fondu 6s; /* Opera */
 }
 
 .vignets3 {
-  animation: fadein 10s;
-  -moz-animation: fadein 10s; /* Firefox */
-  -webkit-animation: fadein 10s; /* Safari et Chrome */
-  -o-animation: fadein 10s; /* Opera */
+  animation: fondu 10s;
+  -moz-animation: fondu 10s; /* Firefox */
+  -webkit-animation: fondu 10s; /* Safari et Chrome */
+  -o-animation: fondu 10s; /* Opera */
 }
 
-@keyframes fadein {
+.vignets4 {
+  animation: fondu 13s;
+  -moz-animation: fondu 13s; /* Firefox */
+  -webkit-animation: fondu 13s; /* Safari et Chrome */
+  -o-animation: fondu 13s; /* Opera */
+}
+
+@keyframes fondu {
   from {
     opacity: 0;
   }
@@ -27,7 +34,7 @@
     opacity: 1;
   }
 }
-@-moz-keyframes fadein { /* sur Firefox */
+@-moz-keyframes fondu { /* sur Firefox */
   from {
     opacity: 0;
   }
@@ -35,7 +42,7 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes fadein { /* sur Safari et Chrome */
+@-webkit-keyframes fondu { /* sur Safari et Chrome */
   from {
     opacity: 0;
   }
@@ -43,7 +50,7 @@
     opacity: 1;
   }
 }
-@-o-keyframes fadein { /* sur Opera */
+@-o-keyframes fondu { /* sur Opera */
   from {
     opacity: 0;
   }
@@ -651,6 +658,7 @@ footer a {
   .vignets {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 /* Page restau*/
