@@ -1,74 +1,67 @@
-@media screen and (min-width: 1100px){brig
-
-
-
-.fonctionnement 
+@media screen and (min-width: 1100px)
 {
-    display: flex;
-    margin:2%;
-   
 
-    h1{
+
+
+    .fonctionnement 
+    {
         display: flex;
-        margin-top: 10%;
-        margin-right: 50px;
+        margin:2%;
+    
+        h1{
+            display: flex;
+            margin-top: 10%;
+            margin-right: 50px;
+        }
     }
 
+    .filtre
+    {
+    max-width: 350px;
+    }
+
+
+    .filtregeneral
+    {
+        justify-content: space-between;
+        width: 90%;
+        
+    }
+
+    .restau
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .entete
+    {
+        width: 100%;
+        
+    }
+
+    a{
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    /* Page restau*/
+
+    .menutitle
+    {
+        .hearticon{margin-right: 0;}
+    }
+
+    .plat
+    {
+        width: 30%;
+        padding-left: 1%;
+    }
+
+    .vignets
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
-
-
-.filtre
-{
-   
-   max-width: 350px;
-}
-
-
-.filtregeneral{
-    justify-content: space-between;
-    width: 90%;
-    
-}
-
-
-
-
-
-.restau
-{display: flex;
-flex-wrap: wrap;
-}
-
-
-.entete
-{
-    width: 100%;
-    
-}
-
-a{
-    width: 48%;
-    margin-right: 2%;
-}
-
-
-/* Page restau*/
-
-.menutitle
-{
-    .hearticon{margin-right: 0;}
-}
-
-.plat{width: 30%;
-    padding-left: 1%;
-}
-
-.vignets{ display: flex;
-    justify-content: space-between;
-flex-wrap: wrap;}
-
-
-}
-
-
-/* Page restau*/

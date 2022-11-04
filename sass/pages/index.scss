@@ -22,83 +22,13 @@
 
 /*-----------------------------*/
 
-.Load{
-background: white;
-position: fixed;
-height: 100%;
-width: 100%;
-top: 0;
-z-index: 100;
-display: flex;
-justify-content: center;
-align-items: center;
-animation: fadeout 0.2s 3s forwards;
-}
-
-@keyframes fadeout{
-    0%{transform: rotate(0deg);
-        opacity: 100%;}
-    100%{transform: rotate(360deg);
-    opacity: 0%;
-visibility: hidden;}
-}
-
-.spinner
-{
-    border: 10px solid #f3f3f3;
-    border-top: 10px solid $primary-color;
-    border-bottom: 10px solid $secondary-color;
-    
-    border-radius: 50%;
-    position: absolute;
-    margin: auto;
-    top: 0; left: 0; right: 0; bottom: 0;
-    animation: spin 3s linear forwards;
-
-    background: white;
-position: fixed;
-height: 100px;
-width: 100px;
-top: 0;
-z-index: 100;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-@keyframes spin{
-    0%{transform: rotate(0deg);
-        }
-    100%{transform: rotate(360deg);
-    }
-}
-
-/*-----------------------------*/
-.city{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #a7a5a5;
-    height: 60px;}
-   
-.gps
-   {
-    border: none;
-    background-color: #a7a5a5;
-    margin-left: 12px;
-    height: 40px;
-    font-size: large;
-    color: black;
-    
-   }
-
 
 
 
 
 .fonctionnement
-{height: 400px;
-margin: 5%;
+{   height: 400px;
+    margin: 5%;
 
     h1{padding-left: 5%;}
 }
@@ -117,6 +47,7 @@ margin: 5%;
     margin-left: 5%;
     box-shadow: 5px 5px 20px #595858 ;
     font-weight: bold;
+    
     :hover{background: #F9E7F7;
 
     .icone{color: $primary-color;}
@@ -125,7 +56,8 @@ margin: 5%;
 }
 
 
-.filtre:active{
+.filtre:active
+{
     background-color:$secondary-color;
     scale:1.05; 
     transition: 2s;
@@ -144,7 +76,6 @@ margin: 5%;
     width: 28px;
     padding: 0px;
     border-radius: 50%;
-
 }
 
 .iconechoix
@@ -155,19 +86,16 @@ margin: 5%;
     width: 100%;
     height: 100%;
     border-radius: 20px;
-   
+
 }
 
-
-
-
 .icone
-{display: flex;
+{   
+    display: flex;
     justify-content: center;
-align-items: center;
-width: 20%;
-padding-left: 5%;
-
+    align-items: center;
+    width: 20%;
+    padding-left: 5%;
 }
 
 
@@ -193,19 +121,15 @@ padding-left: 5%;
 
     a{color: black;
     text-decoration: none;}
-
-    
 }
 
 
 .entete
 {   width: 90%;
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding:0;
-
     h1{padding: 0%;}
 }
 
@@ -218,7 +142,6 @@ padding-left: 5%;
     margin: auto;
     border-radius: 20px;
     margin-bottom: 10%;
-
     &:hover
     {
         @include brightness
@@ -229,31 +152,32 @@ padding-left: 5%;
 
 
 .banner
-{height: 80%;
-width: 100%;
-position: relative;}
-
-
+{
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
 
 
 .photo1
-{   width: 100%;
+{   
+    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
-    
 }
 
 .nouveau
-{position: absolute;
-width: 25%;
-height: 25px;
-background-color: #99E2D0;
-top: 10%;
-right: 10%;
-text-align: center;
-border-radius: 5px;
-align-items: center;
+{
+    position: absolute;
+    width: 25%;
+    height: 25px;
+    background-color: #99E2D0;
+    top: 10%;
+    right: 10%;
+    text-align: center;
+    border-radius: 5px;
+    align-items: center;
     
     h3 
     {
@@ -265,46 +189,44 @@ align-items: center;
 }
 
 
-
 .description
-{display: flex;
-height: 20%;
-justify-content: space-between;
-line-height: 30%;
-padding-left: 5%;}
+{
+    display: flex;
+    height: 20%;
+    justify-content: space-between;
+    line-height: 30%;
+    padding-left: 5%;
+}
 
 
 .text
 {width: 80%;}
 
 .icon
-{display: flex;
-align-items: center;
-justify-content: center;
-width: 20%;
-height: 100%;}
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
 
 
 
 .icon2:hover
-{cursor: pointer;
+{   cursor: pointer;
     opacity: 100%;
     background: linear-gradient(162deg, $secondary-color 0%, $primary-color 100%);
-      background-clip: border-box;
+    background-clip: border-box;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-   
     transition: opacity 1.3s ease-in-out;
-    position: relative;}
+    position: relative;
+}
 
-.material-icons {
-    
-    
+.material-icons 
+{
     font-size: 24px;
     line-height: 1;
-    
-  
-    
-  
-  }
+}

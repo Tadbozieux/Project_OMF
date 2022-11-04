@@ -1,16 +1,13 @@
 footer
 {
     @include footer
-    
-    
-    
 }
 
 .footerligne
-{display: flex;
-align-items: center;
-height: 30px;
+{
+    display: flex;
+    align-items: center;
+    height: 30px;
 
     p{padding-left: 10px ;}
-
 }

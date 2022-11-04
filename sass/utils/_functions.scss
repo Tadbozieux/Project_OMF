@@ -1,3 +1,5 @@
+/* Fondu des plats progressif*/
+
 .vignets1 {
     
     animation: fondu 2s;
@@ -65,3 +67,51 @@
         opacity: 1;
     }
 }
+
+
+/* Loader initial*/
+
+.Load{
+    background: white;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeout 0.2s 3s forwards;
+    }
+    
+    @keyframes fadeout{
+    0%{transform: rotate(0deg);
+        opacity: 100%;}
+    100%{transform: rotate(360deg);
+    opacity: 0%;
+    visibility: hidden;}
+    }
+
+
+
+    .spinner
+{
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid $primary-color;
+    border-bottom: 10px solid $secondary-color;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0; left: 0; right: 0; bottom: 0;
+    animation: spin 3s linear forwards;
+    height: 100px;
+    width: 100px;
+ }
+
+@keyframes spin{
+    0%{transform: rotate(0deg);
+        }
+    100%{transform: rotate(360deg);
+    }
+}
+    /* Loader initial*/
