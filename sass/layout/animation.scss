@@ -2,7 +2,7 @@
 
 .vignets1 
 {    
-  animation: fondu 2s;
+  animation: foitendu 2s;
   -moz-animation: fondu 2s; /* Firefox */
   -webkit-animation: fondu 2s; /* Safari et Chrome */
   -o-animation: fondu 2s; /* Opera */
@@ -121,3 +121,30 @@
   }
 }
   /* Loader initial*/
+
+
+
+
+
+
+
+@keyframes logoAp {
+  0% {opacity:0;}
+  99% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  .divlogo1 {
+  animation: logoAp 1s 1;
+  }
+  
+  .divlogo2 {
+    animation: logoAp 1.5s 1;
+    }  
+
+  .divlogo3 {
+    animation: logoAp 2s 1;
+    }    
+  .divlogo4 {
+    animation: logoAp 2.5s 1;
+    }    
