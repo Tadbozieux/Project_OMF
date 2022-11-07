@@ -1,23 +1,25 @@
 @mixin miseenpage
-{display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 10px 20px 10px 20px;
-text-align: center;
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
 }
 
 @mixin header
 {
-    .logo{
+    .logo
+    {
         display: flex;
         width: 100%;
         background-color: white;
         margin: auto;
-        
-        }
+    }
 
-    img{
+    img
+    {
         display: flex;
         height: 40px;
         width: 200px;
@@ -31,33 +33,38 @@ text-align: center;
 {
     display: flex;
 
-    header{height: 50px;}
+    header
+    {
+        height: 50px;
+    }
 
-    .logo{
+    .logo
+    {
         margin-left: 5%;
         margin-right: 15%;
         padding-top: 10px;
-        padding-bottom: 10px;
-        
+        padding-bottom: 10px
     }
 
-    .fleche{
+    .fleche
+    {
         display: flex;
         width: 20%;
         align-items: center;
         justify-content: center;
         text-decoration: none;
         color: black;
-    .fa-arrow-left
-    {
+    
+        .fa-arrow-left
+        {
         color: black;
-    }
-        
+        }
     }
 }
 
 @mixin btnrose
-{   display: flex;
+{   
+    display: flex;
     text-align:center;
     align-items: center;
     justify-content: center;
@@ -70,7 +77,6 @@ text-align: center;
     margin: auto;
     border-radius: 30px;
     cursor: pointer;
-
 }
 
 
@@ -97,7 +103,8 @@ text-align: center;
     margin-bottom: 2%;
     }
 
-    a {
+    a 
+    {
         text-decoration: none;
         color: white;
     }

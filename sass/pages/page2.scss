@@ -29,12 +29,13 @@
 .menutitle
 {
     display: flex;
-    justify-content: space-between;
+    
 
     .hearticon{
         width: 20%;
         margin: auto;
-        padding-left: 20%;
+        padding-left: 15%;
+        padding-right: 2%;
     }
 }
 .plat
