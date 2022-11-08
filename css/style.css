@@ -483,24 +483,37 @@ footer a {
   height: 100%;
 }
 
-.fa-heart {
-  color: #FFF;
-  background-color: #000;
-  border-radius: 50%;
-  padding: 0.2em;
+.heartfull {
+  display: none;
 }
 
-.fa-heart::before {
-  content: "\f004";
-  font-weight: bold;
-  transition: color 1s ease-out;
+.icon:hover .heartfull {
+  display: inline-block;
+}
+.icon:hover .heartempty {
+  display: none;
+}
+.icon:hover .heartofheart {
+  animation: coeur 2s;
+  animation-iteration-count: 1;
 }
 
-.fa-heart:hover::before {
+.heartofheart {
   color: red;
-  cursor: pointer;
+  animation-fill-mode: forwards;
 }
 
+@keyframes coeur {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .menugeneral {
   width: 100%;
   position: relative;
@@ -576,9 +589,6 @@ footer a {
   margin: 0;
 }
 
-.descriptionplat:active {
-  background: red;
-}
 .descriptionplat:active .valid {
   display: flex;
 }
