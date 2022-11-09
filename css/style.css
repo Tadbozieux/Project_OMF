@@ -69,62 +69,6 @@ header img {
 }
 
 /* Menu*/
-.imgrestau {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-
-.Menu {
-  background-color: rgb(240, 240, 240);
-  border-radius: 40px 40px 0 0;
-  padding-left: 5%;
-  padding-right: 5%;
-  line-height: 50%;
-  padding-bottom: 8%;
-}
-
-.menutitle {
-  display: flex;
-  justify-content: space-between;
-}
-.menutitle .hearticon {
-  width: 20%;
-  margin: auto;
-  padding-left: 20%;
-}
-
-.plat {
-  display: flex;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 5px 5px 10px #595858;
-  justify-content: space-between;
-  height: 80px;
-  line-height: 10%;
-  padding-left: 5%;
-  margin-bottom: 5%;
-}
-
-.descriptionplat {
-  width: 60%;
-}
-
-.prix {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  width: 25%;
-}
-
-.valid {
-  display: flex;
-  width: 20%;
-  justify-content: center;
-  margin: auto;
-  display: none;
-}
-
 .city {
   display: flex;
   align-items: center;
@@ -431,6 +375,10 @@ footer a {
   filter: brightness(1.15);
   box-shadow: grey 8px 8px 20px;
 }
+.card:active {
+  filter: brightness(1.15);
+  box-shadow: grey 8px 8px 20px;
+}
 
 .banner {
   height: 80%;
@@ -496,6 +444,17 @@ footer a {
   animation-iteration-count: 1;
 }
 
+.icon:active .heartfull {
+  display: inline-block;
+}
+.icon:active .heartempty {
+  display: none;
+}
+.icon:active .heartofheart {
+  animation: coeur 1s;
+  animation-iteration-count: 1;
+}
+
 .heartofheart {
   color: #FF79DA;
   animation-fill-mode: forwards;
@@ -523,6 +482,17 @@ footer a {
   color: #99E2D0;
 }
 
+.Menu {
+  background-color: rgb(240, 240, 240);
+  border-radius: 40px 40px 0 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 8%;
+}
+.Menu .rose {
+  margin-top: 15%;
+}
+
 .imgrestau {
   width: 100%;
   height: 250px;
@@ -532,24 +502,28 @@ footer a {
 .menutitle {
   display: flex;
 }
-.menutitle .hearticon {
+.menutitle .icon {
   width: 20%;
   margin: auto;
   padding-left: 15%;
-  padding-right: 2%;
 }
 
 .plat {
   display: flex;
   background-color: white;
   border-radius: 20px;
-  overflow: hidden;
   box-shadow: 5px 5px 10px #595858;
   justify-content: space-between;
   height: 80px;
-  line-height: 10%;
   padding-left: 5%;
   margin-bottom: 5%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.plattittle {
+  padding-left: 20px;
 }
 
 .descriptionplat {
@@ -558,6 +532,17 @@ footer a {
   width: 70%;
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0;
+  line-height: 2;
+}
+.descriptionplat h4 {
+  margin: 0;
+}
+.descriptionplat p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .prix {
@@ -576,15 +561,15 @@ footer a {
   align-items: center;
   justify-content: center;
   transition-duration: 1s;
-}
-
-.plat:hover .valid__rotate {
-  transform: rotate(360deg);
-  transition-duration: 1s;
+  color: white;
 }
 
 .plat:hover .valid {
   margin: 0;
+}
+.plat:hover .valid__rotate {
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 
 .descriptionplat:active .valid {

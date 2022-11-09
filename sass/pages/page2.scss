@@ -15,7 +15,20 @@
 }
 
 
+.Menu
+{
+    background-color: $backgroundgrey;
+    border-radius: 40px 40px 0 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    padding-bottom: 8%;
 
+    .rose
+    {
+        margin-top: 15%;
+    }
+}
 
 .imgrestau
 {
@@ -31,11 +44,11 @@
     display: flex;
     
 
-    .hearticon{
+    .icon{
         width: 20%;
         margin: auto;
         padding-left: 15%;
-        padding-right: 2%;
+        
     }
 }
 .plat
@@ -43,14 +56,19 @@
     display: flex;
     background-color: white;
     border-radius: 20px;
-    overflow: hidden;
     box-shadow: 5px 5px 10px #595858 ;
     justify-content: space-between;
     height: 80px;
-    line-height: 10%;
+   
     padding-left: 5%;
     margin-bottom: 5%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
+
+.plattittle
+{padding-left: 20px;}
 
 .descriptionplat
 {   display: flex;
@@ -58,6 +76,21 @@
     width: 70%;
     overflow: hidden;
     white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
+    line-height: 2;
+    
+    h4
+    {
+        margin: 0;
+    }
+
+    p
+    {
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    }
 }
 
 .prix{
@@ -77,14 +110,7 @@
     align-items: center;
     justify-content: center;
     transition-duration: 1s;
-}
-
-.plat:hover 
-{
-    .valid__rotate{
-    transform: rotate(360deg);
-    transition-duration: 1s;
-    }
+    color: white;
 }
 
 
@@ -93,7 +119,13 @@
 
     .valid
     {
-    margin: 0;}
+    margin: 0;
+}
+
+    .valid__rotate{
+        transform: rotate(360deg);
+        transition-duration: 1s;
+        }
 }
 
 
