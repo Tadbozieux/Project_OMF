@@ -30,7 +30,7 @@
 {   height: 400px;
     margin: 5%;
 
-    h1{padding-left: 5%;}
+    h2{padding-left: 2%;}
 }
 
 
@@ -114,11 +114,7 @@
     height: auto;
     padding: 2%;
 
-    h1
-    {
-        padding: 10% 0 0 5%;
-    }
-
+    
     a{color: black;
     text-decoration: none;}
 }
@@ -200,7 +196,9 @@
 
 
 .text
-{width: 80%;}
+{
+    width: 80%;
+}
 
 .icon
 {
@@ -209,14 +207,16 @@
     justify-content: center;
     width: 20%;
     height: 100%;
-
 }
 
 
 
 
 
-.heartfull{display: none;}
+.heartfull
+    {
+    display: none;
+    }
    
 
 
@@ -224,28 +224,21 @@
 {
    
     
-    .heartfull{
+    .heartfull
+    {
         display: inline-block;
-       
-        
-   
-       
-        }
-    .heartempty{
+    }
+    .heartempty
+    {
         display: none;
-        
-        }
+    }
 
 
 
     .heartofheart
     {
-        
-        
-        animation: coeur 2s ; 
+        animation: coeur 1s ; 
         animation-iteration-count: 1;
-      
-        
     }
 }
 
@@ -256,22 +249,18 @@
 
 .heartofheart
 {
-    color: red;
-    
+    color: $secondary-color;
     animation-fill-mode: forwards;
-   
-    
-    
 }
 
 
 
 @keyframes coeur {
     0% {
-    opacity:0.2;
+    opacity:0.3;
     }
     50%{
-    opacity:0.3
+    opacity:0.5
     ;
     }
     100% {

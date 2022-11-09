@@ -19,6 +19,7 @@ body {
   width: auto;
   max-width: 200px;
   margin: auto;
+  margin-bottom: 10%;
   border-radius: 30px;
   cursor: pointer;
 }
@@ -128,13 +129,13 @@ header img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #a7a5a5;
+  background-color: #c4c2c2;
   height: 60px;
 }
 
 .gps {
   border: none;
-  background-color: #a7a5a5;
+  background-color: #c4c2c2;
   margin-left: 12px;
   height: 40px;
   font-size: large;
@@ -331,8 +332,8 @@ footer a {
   height: 400px;
   margin: 5%;
 }
-.fonctionnement h1 {
-  padding-left: 5%;
+.fonctionnement h2 {
+  padding-left: 2%;
 }
 
 .filtre {
@@ -401,9 +402,6 @@ footer a {
   background-color: rgb(240, 240, 240);
   height: auto;
   padding: 2%;
-}
-.restau h1 {
-  padding: 10% 0 0 5%;
 }
 .restau a {
   color: black;
@@ -494,21 +492,21 @@ footer a {
   display: none;
 }
 .icon:hover .heartofheart {
-  animation: coeur 2s;
+  animation: coeur 1s;
   animation-iteration-count: 1;
 }
 
 .heartofheart {
-  color: red;
+  color: #FF79DA;
   animation-fill-mode: forwards;
 }
 
 @keyframes coeur {
   0% {
-    opacity: 0.2;
+    opacity: 0.3;
   }
   50% {
-    opacity: 0.3;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
