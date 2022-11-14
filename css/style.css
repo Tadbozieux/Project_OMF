@@ -112,67 +112,6 @@ footer a {
   padding-left: 10px;
 }
 
-/* Fondu des plats progressif*/
-.vignets1 {
-  animation: foitendu 2s;
-  -moz-animation: fondu 2s; /* Firefox */
-  -webkit-animation: fondu 2s; /* Safari et Chrome */
-  -o-animation: fondu 2s; /* Opera */
-}
-
-.vignets2 {
-  animation: fondu 6s;
-  -moz-animation: fondu 6s; /* Firefox */
-  -webkit-animation: fondu 6s; /* Safari et Chrome */
-  -o-animation: fondu 6s; /* Opera */
-}
-
-.vignets3 {
-  animation: fondu 10s;
-  -moz-animation: fondu 10s; /* Firefox */
-  -webkit-animation: fondu 10s; /* Safari et Chrome */
-  -o-animation: fondu 10s; /* Opera */
-}
-
-.vignets4 {
-  animation: fondu 13s;
-  -moz-animation: fondu 13s; /* Firefox */
-  -webkit-animation: fondu 13s; /* Safari et Chrome */
-  -o-animation: fondu 13s; /* Opera */
-}
-
-@keyframes fondu {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fondu {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fondu {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fondu {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /* Loader initial*/
 .Load {
   background: white;
@@ -223,6 +162,34 @@ footer a {
   }
 }
 /* Loader initial*/
+/* animation menu declage vertical et transparence */
+@keyframes decalagev-opacite {
+  0% {
+    transform: translatey(30px);
+    opacity: 0.25%;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity: 100%;
+  }
+}
+.divlogo1 {
+  animation: decalagev-opacite 1s;
+}
+
+.divlogo2 {
+  animation: decalagev-opacite 2s;
+}
+
+.divlogo3 {
+  animation: decalagev-opacite 3s;
+}
+
+.divlogo4 {
+  animation: decalagev-opacite 3.5s;
+}
+
+/* animation menu declage vertical et transparence */
 @keyframes logoAp {
   0% {
     opacity: 0;
@@ -234,22 +201,6 @@ footer a {
     opacity: 1;
   }
 }
-.divlogo1 {
-  animation: logoAp 1s 1;
-}
-
-.divlogo2 {
-  animation: logoAp 1.5s 1;
-}
-
-.divlogo3 {
-  animation: logoAp 2s 1;
-}
-
-.divlogo4 {
-  animation: logoAp 2.5s 1;
-}
-
 .Titres {
   background-color: rgb(239, 239, 239);
   display: flex;
@@ -397,16 +348,17 @@ footer a {
 .nouveau {
   position: absolute;
   width: 25%;
-  height: 25px;
+  height: 30px;
   background-color: #99E2D0;
   top: 10%;
   right: 10%;
   text-align: center;
   border-radius: 5px;
   align-items: center;
+  padding-top: 3px;
 }
 .nouveau h3 {
-  margin-top: 0;
+  margin: 0;
   color: green;
 }
 
@@ -457,7 +409,7 @@ footer a {
 }
 
 .heartofheart {
-  background: linear-gradient(90deg, #9356DC 0%, #9356DC 25%, #a279d5 50%, #FF79DA 75%, #FF79DA 100%);
+  background: linear-gradient(90deg, #9356DC 0%, #bf53e7 50%, #FF79DA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -506,6 +458,10 @@ footer a {
 
 .menutitle {
   display: flex;
+  justify-content: space-between;
+}
+.menutitle .title {
+  width: 80%;
 }
 .menutitle .icon {
   width: 20%;
