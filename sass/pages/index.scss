@@ -279,7 +279,12 @@
 
 .heartofheart
 {
-    color: $secondary-color;
+    background: linear-gradient(90deg, #9356DC 0%,#9356DC 25%,#a279d5 50%,#FF79DA 75%,#FF79DA 100%);
+ 
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-background-clip: text;
+-moz-text-fill-color: transparent;
     animation-fill-mode: forwards;
 }
 
