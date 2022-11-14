@@ -374,6 +374,7 @@ footer a {
 .card:hover {
   filter: brightness(1.15);
   box-shadow: grey 8px 8px 20px;
+  transition: all 0.5s linear;
 }
 .card:active {
   filter: brightness(1.15);
@@ -560,12 +561,12 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: 1s;
   color: white;
 }
 
 .plat:hover .valid {
   margin: 0;
+  transition-duration: 1s;
 }
 .plat:hover .valid__rotate {
   transform: rotate(360deg);

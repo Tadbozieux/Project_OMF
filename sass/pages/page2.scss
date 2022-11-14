@@ -109,7 +109,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-duration: 1s;
     color: white;
 }
 
@@ -120,6 +119,7 @@
     .valid
     {
     margin: 0;
+    transition-duration: 1s;
 }
 
     .valid__rotate{

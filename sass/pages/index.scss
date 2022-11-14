@@ -140,7 +140,8 @@
     margin-bottom: 10%;
     &:hover
     {
-        @include brightness
+        @include brightness;
+        transition: all 0.5s linear;
     }
 
     &:active
