@@ -1,7 +1,6 @@
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/extensions";
 
 @import "./base/base";
 @import "./base/typography";
@@ -22,6 +21,6 @@
 @import "./pages/page2";
 
 
-@import "./queries";
+@import "./queries700px";
 @import "./queries1100px";
 

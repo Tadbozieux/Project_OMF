@@ -1,6 +1,100 @@
 /* Menu*/
 
+.menugeneral
+{
+    width: 100%;
+    position: relative;
+    margin-top: -10%;
+    hr
+    {   
+        width: 20%;
+        margin-left: 1%;
+        color: $tertiers-color;
+    }
+}
 
+
+.Menu
+{
+    background-color: $backgroundgrey;
+    border-radius: 40px 40px 0 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 8%;
+
+    .rose
+    {
+        margin-top: 15%;
+        
+    }
+}
+
+.imgrestau
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
+.menutitle
+{
+    display: flex;
+    justify-content: space-between;
+    
+    .title{width: 80%;}
+
+    .icon{
+        width: 20%;
+        margin: auto;
+        padding-left: 15%;
+        
+    }
+}
+.plat
+{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #595858 ;
+    justify-content: space-between;
+    height: 80px;
+    padding-left: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.plattittle
+{
+    padding-left: 20px;
+}
+
+.descriptionplat
+{   
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
+    line-height: 2;
+    
+    h4
+    {
+        margin: 0;
+    }
+
+    p
+    {
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    }
+}
 
 
 
