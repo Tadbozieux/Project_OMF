@@ -29,6 +29,31 @@
     }
 }
 
+
+
+.menupartie{
+
+margin-bottom: 1rem;
+font-weight: 400;
+position: relative;}
+
+.menupartie::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 0.3rem;
+    background-color: #99e2d0;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+margin-bottom: 1rem;
+}
+
+
+
+
+
+
 .imgrestau
 {
     width: 100%;
@@ -67,10 +92,8 @@
     text-overflow: ellipsis;
 }
 
-.plattittle
-{
-    padding-left: 20px;
-}
+
+
 
 .descriptionplat
 {   
@@ -82,10 +105,13 @@
     text-overflow: ellipsis;
     margin: 0;
     line-height: 2;
+    justify-content: center;
     
     h4
     {
         margin: 0;
+        text-overflow: ellipsis;
+    overflow: hidden;
     }
 
     p

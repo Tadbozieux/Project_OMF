@@ -45,19 +45,27 @@
     box-shadow: 5px 5px 20px #595858 ;
     font-weight: bold;
     
-    :hover{background: #F9E7F7;
+    
 
-    .icone{color: $primary-color;}
+    
+
+    .icone{color: black;}
     }
 
+.iconechoix:hover
+{background-color: RGB(245, 237, 255);
+
+    .icone{color: $primary-color;}
 }
 
 
 .filtre:active
 {
     background-color:$secondary-color;
-    transition: 2s;
+   
 }
+
+
 
 
 .bouton
@@ -73,7 +81,10 @@
     width: 28px;
     padding: 0px;
     border-radius: 50%;
+   
 }
+
+
 
 .iconechoix
 {   
@@ -90,15 +101,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%;
-    padding-left: 5%;
+    width: 15%;
 }
 
-
-.filtredescription
-{
-    padding-left: 10%;
-}
 
 
 
@@ -180,7 +185,7 @@
     height: 30px;
     background-color: #99E2D0;
     top: 10%;
-    right: 10%;
+    right: 6%;
     text-align: center;
     border-radius: 5px;
     align-items: center;
@@ -220,58 +225,59 @@
 }
 
 
-.heartfull
-    {
-    display: none;
-    }
+
  
 
-.icon:hover
-{
-   
-    
-    .heartfull
-    {
-        display: inline-block;
-    }
-    .heartempty
-    {
-        display: none;
-    }
 
+
+.heartempty{
+    .fa-lg{line-height: 1;
+    color: black;
+    width: 50px;
+}
+}
+
+.heartempty:hover
+
+{
+
+    
+    .fa-lg{line-height: 1;}
+        
+
+    .heartempty{background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        animation-fill-mode: forwards;}
+    
 
     .heartofheart
     {
+        background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        animation-fill-mode: forwards;
         animation: coeur 1s ; 
         animation-iteration-count: 1;
+        font-weight: bold;
+        
     }
+    
 }
-
-.icon:active
-{    
-    .heartfull
-    {
-        display: inline-block;
-    }
-    .heartempty
-    {
-        display: none;
-    }
-
-    .heartofheart
-    {
-        animation-iteration-count: 1;
-    }
-}
-
-
 
 .heartofheart
 {
-    background: linear-gradient(90deg, #9356DC 0%,#bf53e7 50%,#FF79DA 100%);
+    background: black;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
+    background-clip: text;
     -moz-text-fill-color: transparent;
     animation-fill-mode: forwards;
 }

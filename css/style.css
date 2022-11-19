@@ -5,6 +5,10 @@
 body {
   width: 100%;
   margin: 0%;
+  font-family: "roboto";
+}
+body #titres {
+  font-family: "Shrikhand";
 }
 
 .rose {
@@ -17,7 +21,7 @@ body {
   background: linear-gradient(200deg, #9356DC 0%, #FF79DA 100%);
   padding: 18px;
   width: auto;
-  max-width: 200px;
+  max-width: 210px;
   margin: auto;
   margin-bottom: 10%;
   border-radius: 30px;
@@ -91,6 +95,24 @@ header img {
   margin-top: 15%;
 }
 
+.menupartie {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.menupartie::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 0.3rem;
+  background-color: #99e2d0;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+  margin-bottom: 1rem;
+}
+
 .imgrestau {
   width: 100%;
   height: 250px;
@@ -124,10 +146,6 @@ header img {
   text-overflow: ellipsis;
 }
 
-.plattittle {
-  padding-left: 20px;
-}
-
 .descriptionplat {
   display: flex;
   flex-direction: column;
@@ -137,9 +155,12 @@ header img {
   text-overflow: ellipsis;
   margin: 0;
   line-height: 2;
+  justify-content: center;
 }
 .descriptionplat h4 {
   margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .descriptionplat p {
   margin: 0;
@@ -151,13 +172,13 @@ header img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #c4c2c2;
+  background-color: RGB(234, 234, 234);
   height: 60px;
 }
 
 .gps {
   border: none;
-  background-color: #c4c2c2;
+  background-color: RGB(234, 234, 234);
   margin-left: 12px;
   height: 40px;
   font-size: large;
@@ -165,7 +186,7 @@ header img {
 }
 
 footer {
-  background-color: #595858;
+  background-color: RGB(53, 53, 53);
   color: white;
   padding: 5% 0% 5% 5%;
   line-height: 80%;
@@ -332,16 +353,19 @@ footer a {
   box-shadow: 5px 5px 20px #595858;
   font-weight: bold;
 }
-.filtre :hover {
-  background: #F9E7F7;
+.filtre .icone {
+  color: black;
 }
-.filtre :hover .icone {
+
+.iconechoix:hover {
+  background-color: RGB(245, 237, 255);
+}
+.iconechoix:hover .icone {
   color: #9356DC;
 }
 
 .filtre:active {
   background-color: #FF79DA;
-  transition: 2s;
 }
 
 .bouton {
@@ -371,12 +395,7 @@ footer a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
-  padding-left: 5%;
-}
-
-.filtredescription {
-  padding-left: 10%;
+  width: 15%;
 }
 
 /*restaur cards*/
@@ -438,7 +457,7 @@ footer a {
   height: 30px;
   background-color: #99E2D0;
   top: 10%;
-  right: 10%;
+  right: 6%;
   text-align: center;
   border-radius: 5px;
   align-items: center;
@@ -469,36 +488,43 @@ footer a {
   height: 100%;
 }
 
-.heartfull {
-  display: none;
+.heartempty .fa-lg {
+  line-height: 1;
+  color: black;
+  width: 50px;
 }
 
-.icon:hover .heartfull {
-  display: inline-block;
+.heartempty:hover .fa-lg {
+  line-height: 1;
 }
-.icon:hover .heartempty {
-  display: none;
-}
-.icon:hover .heartofheart {
-  animation: coeur 1s;
-  animation-iteration-count: 1;
-}
-
-.icon:active .heartfull {
-  display: inline-block;
-}
-.icon:active .heartempty {
-  display: none;
-}
-.icon:active .heartofheart {
-  animation-iteration-count: 1;
-}
-
-.heartofheart {
-  background: linear-gradient(90deg, #9356DC 0%, #bf53e7 50%, #FF79DA 100%);
+.heartempty:hover .heartempty {
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  animation-fill-mode: forwards;
+}
+.heartempty:hover .heartofheart {
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  animation-fill-mode: forwards;
+  animation: coeur 1s;
+  animation-iteration-count: 1;
+  font-weight: bold;
+}
+
+.heartofheart {
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  background-clip: text;
   -moz-text-fill-color: transparent;
   animation-fill-mode: forwards;
 }
@@ -509,6 +535,7 @@ footer a {
   justify-content: center;
   width: 20%;
   padding-right: 2%;
+  font-weight: bolder;
 }
 
 .valid {

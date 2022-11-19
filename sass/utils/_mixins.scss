@@ -73,7 +73,7 @@
     background: linear-gradient(200deg, $primary-color 0%, $secondary-color 100%);
     padding: 18px;
     width: auto;
-    max-width: 200px;
+    max-width: 210px;
     margin: auto;
     margin-bottom: 10%;
     border-radius: 30px;
@@ -89,7 +89,7 @@
 
 @mixin footer
 {
-    background-color: #595858;
+    background-color: RGB(53, 53, 53);
     color: white;
     padding: 5% 0% 5% 5%;
     line-height: 80%;
